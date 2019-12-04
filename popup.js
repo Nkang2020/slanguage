@@ -1,11 +1,4 @@
-// chrome.storage.local.get(null, function(items) {
-//     console.log('Settings retrieved', items);
-//     // document.getElementById("word").innerHTML = items;
-//   });
-
-
   chrome.storage.local.get(null, function(items) {
-        
         var allKeys = Object.keys(items);
         var allKeys2 = Object.values(items);
         var nums1 = document.getElementsByClassName("text-1");

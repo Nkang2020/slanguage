@@ -22,7 +22,12 @@ var listSlang = {
     'woke':"knowledgeable, sympathetic, and aware",
     'yass':"yes!"
 }
+// chrome.browserAction.setBadgeText ( { text: "loading" } );
+// chrome.browserAction.setIcon({path: 'success-icon.png'})
+
+  
 var newList = {};
+
 var elements = document.getElementsByTagName('*');
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
@@ -38,6 +43,9 @@ for (var i = 0; i < elements.length; i++) {
                 if (text[k] in listSlang ){
                     if (!(text[k] in newList)) {
                         newList[text[k]] = listSlang[text[k]];
+                        chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
+                            console.log(response.farewell);
+                          });
                     }
                     
                 }
@@ -49,10 +57,10 @@ for (var i = 0; i < elements.length; i++) {
 chrome.storage.local.set(newList, function() {
   });
 
-  chrome.storage.local.get(null, function(items) {
-    var allKeys = Object.keys(items);
-    var allKeys2 = Object.values(items);
-});
+//   chrome.storage.local.get(null, function(items) {
+//     var allKeys = Object.keys(items);
+//     var allKeys2 = Object.values(items);
+// });
 
 // window.addEventListener('keyup',function(e){
 //     console.log(e);
