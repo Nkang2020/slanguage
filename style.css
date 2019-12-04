@@ -1,0 +1,33 @@
+.body {
+    font-family: 'Montserrat', sans-serif;
+    width: 320px;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.block-in-1 {
+    min-width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+.block-out {
+    display: flex;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 3px #888888;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+.block-in-2 {
+    padding-left: 16px;
+    font-size: 11px;
+    border-left: solid #808080 1px;
+}
+.Capa_1 {
+    width:20px;
+    height:20px;
+}
+.svg-div {
+    margin: 0 auto;
+    margin-right: 0;
+}
