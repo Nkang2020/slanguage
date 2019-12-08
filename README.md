@@ -1,1 +1,1 @@
-This is your Chrome extension which replaces a word or phrase with a different word or phrase. 
+Slanguage will scan webpages for slang text and will add them to your inbox with the definitions. Easy and simple!
