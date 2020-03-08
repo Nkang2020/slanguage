@@ -1,7 +1,7 @@
 {
 "manifest_version": 2,
-    "name": "slanguage",
-    "description": "slanguage man",
+    "name": "Slanguage",
+    "description": "Slanguage is a chrome extension that detects and translates slang words.",
     "version": "1.0",
     "permissions": [
         "storage"

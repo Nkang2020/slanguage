@@ -31,3 +31,10 @@
     margin: 0 auto;
     margin-right: 0;
 }
+.empty-div {
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 3px #888888;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
