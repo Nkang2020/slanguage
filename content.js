@@ -27,7 +27,7 @@ var listSlang = {
 
   
 var newList = {};
-
+console.log("hi");
 var elements = document.getElementsByTagName('*');
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
@@ -42,6 +42,7 @@ for (var i = 0; i < elements.length; i++) {
             for (k = 0; k < text.length ; k++){
                 if (text[k] in listSlang ){
                     if (!(text[k] in newList)) {
+                        console.log(newList);
                         newList[text[k]] = listSlang[text[k]];
                         chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
                             console.log(response.farewell);
